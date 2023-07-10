@@ -36,9 +36,8 @@ export default function DeleteHabit(props) {
         }
       );
       setDeleteSuccess(true);
-      setTimeout(() => {
-        window.location.href = "/Dashboard";
-      }, 2000);
+      window.location.href = "/Dashboard";
+ 
     } catch (error) {
       console.log(error);
       setDeleteSuccess(false);

@@ -44,9 +44,8 @@ export default function AddHabit() {
             path: "/",
           });
           setRegister(true);
-          setTimeout(() => {
-            window.location.href = "/Dashboard";
-          }, 2000);
+          window.location.href = "/Dashboard";
+
         } else {
           setRegister(false);
           console.log(res.data);

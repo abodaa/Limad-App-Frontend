@@ -50,9 +50,8 @@ export default function AddHabit() {
           console.log(res.data);
         }
         setLogin(true);
-        setTimeout(() => {
-          window.location.href = "/Dashboard";
-        }, 2000);
+        window.location.href = "/Dashboard";
+   
       } else {
         alert("Please provide all info");
       }
