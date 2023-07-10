@@ -1,0 +1,377 @@
+
+.habit-main-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+.habit-container{
+  width: 26%;
+  border: 1px solid #484b6a34;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 15px;
+  padding: 2rem;
+  background-color: white;
+    @media (max-width: 700px) {
+      width: 80%;
+    }
+    @media (min-width: 700px) {
+      width: 35%;
+    }
+    @media (min-width: 1024px) {
+      width: 32%;
+    }
+    @media (min-width: 1400px) {
+      width: 25%;
+    }
+}
+.habit-container:hover{
+  border: 1px solid #484b6a7c;
+    
+}
+.title-status-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #484b6a25;
+}
+.title-status-container > p{
+  font-size: 0.8rem;
+  
+}
+.title-status-container > h3 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.status-description{
+  background-color: #484b6a18;
+  padding: 0.3rem 0.8rem;
+    border-radius: 10rem;
+
+}
+.habit-status{
+     background-color: #484b6a18;
+    padding: 0.3rem 0.8rem;
+    border-radius: 10rem;
+    font-size: 0.6rem;
+    border-radius: 30rem;
+    text-transform: capitalize;
+
+}
+.progress-bar-achieved{
+    background-color: green;
+    height: 0.3rem;
+    border-radius: 5px;
+    width: 100%;
+}
+.progress-bar-cancelled{
+    background-color: red;
+    height: 0.3rem;
+    border-radius: 5px;
+    width: 100%;
+}
+.progress-bar-onprogress{
+    background-color: gold;
+    height: 0.3rem;
+    border-radius: 5px;
+    width: 100%;
+}
+.progress-bar-new{
+    background-color: grey;
+    height: 0.3rem;
+    border-radius: 5px;
+    width: 100%;
+}
+.Motivation-text{
+    margin-top: 10px;
+    width: 60%;
+    text-align: center;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+    background-color: #6c78ff21;
+    padding: 0.3rem 0.8rem;
+    border-radius: 10rem;
+}
+.icons-container{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+.icons{
+    padding: 0.5rem;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
+    border-radius: 50%;
+    /* border: 1px solid #484b6a29; */
+    
+}
+.icons:hover{
+    background-color: #484b6a29;
+    border-radius: 50%;
+    border: 1px solid #484b6a29;
+    cursor: pointer;
+}
+.edit-delete-main-container{
+    position: relative;
+}
+.edit-delete-icons-container{
+    position: absolute;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background-color: white;
+    border: 1px solid #484b6a29;
+    z-index: 0;
+    width: 8rem;
+    border-radius: 5px;
+}
+.edit-delete-icon-one{
+    border-bottom: 1px solid #484b6a29;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+
+}
+.edit-delete-icon-one > p{
+font-size: 0.8rem;
+}
+.edit-delete-icon-one:hover{
+    background-color: #d4fcd4;
+    cursor: pointer;
+    /* color: #beffbe; */
+}
+
+
+.edit-delete-icon-two{
+    border-bottom: 1px solid #484b6a29;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+
+}
+.edit-delete-icon-two > p{
+font-size: 0.8rem;
+}
+.edit-delete-icon-two:hover{
+    background-color: #fcd4d4;
+    cursor: pointer;
+    /* color: #beffbe; */
+}
+
+.dashboard-header{
+  margin: auto;
+  margin-top: 9rem;
+    @media (max-width: 700px) {
+      width: 90%;
+    }
+    @media (min-width: 700px) {
+      width: 60%;
+    }
+    @media (min-width: 1024px) {
+      width: 60%;
+    }
+    @media (min-width: 1400px) {
+      width: 60%;
+    }
+}
+
+.dashboard-header :first-child{
+  text-align: center;
+  margin: auto;
+  font-size: 1.5rem;
+    @media (max-width: 700px) {
+      font-size: 0.7rem;
+    }
+    @media (min-width: 700px) {
+      font-size: 1rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.1rem;
+    }
+    @media (min-width: 1400px) {
+      font-size: 1.5rem;
+    }
+}
+
+.filter-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content:center;
+   gap: 0.5rem;
+    @media (max-width: 700px) {
+    }
+    @media (min-width: 700px) {
+    }
+    @media (min-width: 1024px) {
+    }
+    @media (min-width: 1400px) {
+    }
+}
+.filter-buttons button{
+  border: none;
+  padding: 0.6rem 2rem;
+  /* background-color: white; */
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+    @media (max-width: 700px) {
+      padding: 0.4rem 0.5rem;
+      font-size: 0.6rem;
+
+    }
+    @media (min-width: 700px) {
+      padding: 0.6rem 1rem;
+      font-size: 0.7rem;
+
+    }
+    @media (min-width: 1024px) {
+      padding: 0.6rem 1rem;
+      font-size: 0.8rem;
+
+    }
+    @media (min-width: 1400px) {
+      padding: 0.6rem 2rem;
+      font-size: 0.8rem;
+
+    }
+}
+.filter-buttons button:hover{
+  background-color:#484b6a;
+  color: white;
+  
+}
+
+/* ADD HABIT */
+.add-habit-main-container{
+
+}
+.add-habit-input-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    margin-top: 1rem;
+    @media (max-width: 700px) {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+
+    }
+    @media (min-width: 700px) {
+      width: 90%;
+
+    }
+    @media (min-width: 1024px) {
+      width: 95%;
+
+    }
+    @media (min-width: 1400px) {
+        width: 90%;
+    }
+
+}
+.add-habit-input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #484b6a28;
+    @media (max-width: 700px) {
+      width: 200%;
+    }
+    @media (min-width: 700px) {
+      width: 100%;
+    }
+    @media (min-width: 1024px) {
+      width: 100%;
+    }
+    @media (min-width: 1400px) {
+      width: 100%;
+    }
+}
+.date-picker{
+    width: 200%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #484b6a28;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    @media (max-width: 700px) {
+      width: 200%;
+    }
+    @media (min-width: 700px) {
+      width: 100%;
+    }
+    @media (min-width: 1024px) {
+      width: 100%;
+    }
+    @media (min-width: 1400px) {
+      width: 100%;
+    }
+}
+.add-habit-dialog{
+    @media (max-width: 700px) {
+      font-size: 0.7rem;
+    }
+    @media (min-width: 700px) {
+      font-size: 0.7rem;;
+    }
+    @media (min-width: 1024px) {
+      font-size: 0.8rem;
+    }
+    @media (min-width: 1400px) {
+      font-size: 1rem;
+    }
+}
+.input-contaier{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 45%;
+}
+.status-picker{
+  display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    @media (max-width: 700px) {
+      width: 107%;
+    }
+    @media (min-width: 700px) {
+     width: 45%;
+    }
+    @media (min-width: 1024px) {
+      width: 45%;
+    }
+    @media (min-width: 1400px) {
+      width: 45%;
+    }
+}
+
+.status-dropdown{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #484b6a28;
+}
+.status-dropdown:focus{
+  outline: none;
+
+}
+select::-ms-expand {
+    display: none;
+}
+
