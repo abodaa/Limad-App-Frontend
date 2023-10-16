@@ -1,12 +1,9 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import { VscAdd } from "react-icons/vsc";
 import { MdOutlineModeEditOutline } from "react-icons/md";
 
 import { useState } from "react";
@@ -30,7 +27,7 @@ export default function EditHabit(props) {
     e.preventDefault();
     try {
       const res = await axios.patch(
-        `https://sore-jade-fossa-robe.cyclic.app/api/v1/habit/${props.id}`,
+        `https://tender-cow-headscarf.cyclic.app/api/v1/habit/${props.id}`,
         {
           status: status,
           title: title,

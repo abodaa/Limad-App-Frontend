@@ -1,15 +1,10 @@
 import "../style/home.scss";
-import { CgMenuGridO, CgProfile } from "react-icons/cg";
 import { GrRun } from "react-icons/gr";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { BsArrowBarRight } from "react-icons/bs";
 import { SlArrowDownCircle } from "react-icons/sl";
 import { AiOutlineSchedule } from "react-icons/ai";
 import Footer from "../components/Footer";
-import menuImage from "../images/menu.png";
-import profPic from "../images/user.png";
-import searchIcon from "../images/search.png";
-import logo from "../images/logo.png";
 import heroImage from "../images/hero.png";
 import hometwo from "../images/hometwo.jpg";
 

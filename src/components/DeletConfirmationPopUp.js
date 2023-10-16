@@ -2,7 +2,6 @@
 import "../style/dashboard.scss";
 import * as React from "react";
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
@@ -28,7 +27,7 @@ export default function DeleteHabit(props) {
        e.preventDefault();
     try {
       const res = await axios.delete(
-        `https://sore-jade-fossa-robe.cyclic.app/api/v1/habit/${props.id}`,
+        `https://tender-cow-headscarf.cyclic.app/api/v1/habit/${props.id}`,
         {
           headers: {
             authorization: `Bearer ${token}`,

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* width: 100%; */
+  flex-wrap: wrap;
   margin: auto;
   padding: 1rem 10rem;
   background-color: 	#ffffff;
@@ -72,23 +72,38 @@
 }
 .logo{
     @media (max-width: 700px) {
-      width: 3rem;
+      width: 1.7rem;
     }
     @media (min-width: 700px) {
-      width: 4rem;
+      width: 3rem;
     }
     @media (min-width: 1024px) {
-      width: 5rem;
+      width: 3rem;
     }
     @media (min-width: 1400px) {
-      width: 6rem;
+      width: 3rem;
     }  
+}
+.logo-text{
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1rem;
+    @media (max-width: 700px) {
+      font-size: 0.7rem;
+
+    }
+    @media (min-width: 700px) {
+    }
+    @media (min-width: 1024px) {
+    }
+    @media (min-width: 1400px) {
+    } 
 }
 .logo-help-btn{
   display: flex;
   align-items: center;
   justify-content: center;
-gap: 10px;
+  gap: 10px;
 
 }
 .menu-profpic-container{

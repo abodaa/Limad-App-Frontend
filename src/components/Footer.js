@@ -1,11 +1,12 @@
 import React from "react";
 import "../style/footer.scss";
-import footerLogo from "../images/footerlogo.png";
+import footerLogo from "../images/habits.png";
 import { BsTelephoneFill } from "react-icons/bs";
 import { LuMails } from "react-icons/lu";
 import { SiFacebook } from "react-icons/si";
 import { BsTelegram } from "react-icons/bs";
 import { PiArticleMedium } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 
 export default function Footer() {
@@ -13,10 +14,17 @@ export default function Footer() {
     <div>
       <div className="footer-main-container">
         <div className="footer-left-container">
-          <img src={footerLogo} className="footer-logo" alt="" />
+          <Link
+            to="/"
+            className="footer-logo-wrapper"
+            style={{ textDecoration: "none", color: "#fff" }}
+          >
+            <img src={footerLogo} alt="" className="footer-logo" />
+            <p className="footer-logo-text">ልማድ | LIMAD</p>
+          </Link>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-            dolorem provident cupiditate incidunt ipsum architecto.
+            Harness the power of our personalized habit tracker app to
+            streamline your everyday routines and achieve your goals.
           </p>
           <div className="donate-social-icons-container">
             <button className="footer-donate-btn">

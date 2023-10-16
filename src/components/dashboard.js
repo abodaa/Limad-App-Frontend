@@ -2,8 +2,6 @@ import axios from "axios";
 import React, { useEffect, useState, useRef } from "react";
 import Cookies from "universal-cookie";
 import "../style/dashboard.scss";
-import { LiaEditSolid } from "react-icons/lia";
-import { MdDeleteOutline, MdOutlineModeEditOutline } from "react-icons/md";
 import { CiMenuKebab } from "react-icons/ci";
 import DeleteConfirmationPopUp from "../components/DeletConfirmationPopUp";
 import EditHabit from "../components/EditHabit";
@@ -51,7 +49,7 @@ const allStatus = () => {
   useEffect(() => {
     axios
       .get(
-        `https://sore-jade-fossa-robe.cyclic.app/api/v1/habit?habitStatus=${habitStatus}`,
+        `https://tender-cow-headscarf.cyclic.app/api/v1/habit?habitStatus=${habitStatus}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

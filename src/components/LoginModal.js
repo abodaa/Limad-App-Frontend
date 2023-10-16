@@ -7,14 +7,12 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import { VscAdd } from "react-icons/vsc";
 import { useState } from "react";
 import axios from "axios";
 import LoginAlertsuccess from "./Alerts/LoginAlertsuccess";
 import LoginAlertIncorrectUsername from "./Alerts/LoginAlertIncorrectUsername";
 import LoginAlertIncorrectPassword from "./Alerts/LoginAlertIncorrectPassword";
 
-import loginimage from "../images/habit.jpg";
 // import SuccessAlert from "./Alert";
 
 import Cookies from "universal-cookie";
@@ -27,13 +25,15 @@ export default function AddHabit() {
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState("");
   const [token, setToken] = useState();
+  const[isloginLoading,setIsLoginLoading] = useState()
 
   const handleSubmit = async (e) => {
+    setIsLoginLoading(true);
     e.preventDefault();
     try {
       if (email && password) {
         const res = await axios.post(
-          "https://sore-jade-fossa-robe.cyclic.app/api/v1/auth/login",
+          "https://tender-cow-headscarf.cyclic.app/api/v1/auth/login",
           {
             email: email,
             password: password,
@@ -41,22 +41,25 @@ export default function AddHabit() {
         );
 
         if (res.data.token) {
-          console.log(res.data.token);
           cookies.set("TOKEN", res.data.token, {
             path: "/",
           });
+          setIsLoginLoading(false);
         } else {
           setLogin(false);
-          console.log(res.data);
+          setIsLoginLoading(false);
+
         }
         setLogin(true);
         window.location.href = "/Dashboard";
    
       } else {
+        setIsLoginLoading(false);
         alert("Please provide all info");
+
       }
     } catch (error) {
-      console.log(error.response.data.msg);
+      setIsLoginLoading(false);
       setLogin(error.response.data.msg);
     }
   };
@@ -108,13 +111,22 @@ export default function AddHabit() {
               required
               placeholder="Enter your password"
             />
-            <button
-              type="submit"
-              className="login-btn"
-              onClick={(e) => handleSubmit(e)}
-            >
-              Log in
-            </button>
+            {!isloginLoading ? (
+              <button
+                type="submit"
+                className="login-btn"
+                onClick={(e) => handleSubmit(e)}
+              >
+                Log in
+              </button>
+            ) : (
+              <button
+                type="submit"
+                className="login-btn"
+              >
+                Logging in ...
+              </button>
+            )}
             {login === true && <LoginAlertsuccess />}
             {login === "Unauthorized User" && <LoginAlertIncorrectPassword />}
             {login === "User not found" && <LoginAlertIncorrectUsername />}
