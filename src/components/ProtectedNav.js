@@ -17,7 +17,7 @@ export default function Navbar() {
   const [name, setName] = useState("");
   useEffect(() => {
     axios
-      .get("https://tender-cow-headscarf.cyclic.app/api/v1/habit", {
+      .get("https://limad-habits-tracker-api-1.onrender.com/api/v1/habit", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
