@@ -27,7 +27,7 @@ export default function DeleteHabit(props) {
        e.preventDefault();
     try {
       const res = await axios.delete(
-        `https://tender-cow-headscarf.cyclic.app/api/v1/habit/${props.id}`,
+        `https://limad-habits-tracker-api-1.onrender.com/api/v1/habit/${props.id}`,
         {
           headers: {
             authorization: `Bearer ${token}`,
