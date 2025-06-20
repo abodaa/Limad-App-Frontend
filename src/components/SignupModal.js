@@ -29,7 +29,7 @@ export default function AddHabit() {
     try {
       if (username && email && password) {
         const res = await axios.post(
-          "https://tender-cow-headscarf.cyclic.app/api/v1/auth/register",
+          "https://limad-habits-tracker-api-1.onrender.com/api/v1/auth/register",
           {
             username: username,
             email: email,
