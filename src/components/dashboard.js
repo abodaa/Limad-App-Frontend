@@ -49,7 +49,7 @@ const allStatus = () => {
   useEffect(() => {
     axios
       .get(
-        `https://tender-cow-headscarf.cyclic.app/api/v1/habit?habitStatus=${habitStatus}`,
+        `https://limad-habits-tracker-api-1.onrender.com/api/v1/habit?habitStatus=${habitStatus}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
