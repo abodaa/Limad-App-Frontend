@@ -27,7 +27,7 @@ export default function EditHabit(props) {
     e.preventDefault();
     try {
       const res = await axios.patch(
-        `https://tender-cow-headscarf.cyclic.app/api/v1/habit/${props.id}`,
+        `https://limad-habits-tracker-api-1.onrender.com/api/v1/habit/${props.id}`,
         {
           status: status,
           title: title,
